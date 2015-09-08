@@ -1,0 +1,65 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    .contact-img img { width: 235px }
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    .logo,
+    .mainmenu ul.nav.navbar-nav,
+    .author-food-img,
+    .contact-img { text-align: center }
+    .mainmenu ul.nav.navbar-nav { font-size: 18px }
+    .header-text { padding-top: 150px }
+    .header-text h2 { font-size: 60px }
+    .author-food-img { margin-top: 30px }
+    .contact-img { margin-bottom: 30px }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .mainmenu {
+        padding-right: 0;
+        text-align: right;
+        padding-top: 20px;
+    }
+    .navbar-toggle {
+        float: none;
+        border-color: #fff;
+        margin: 0;
+    }
+    .navbar-toggle .icon-bar { background: #fff }
+    .mobile-menu-activated ul.nav.navbar-nav {
+        background-color: #000;
+        opacity: .9;
+    }
+    .mobile-menu-activated ul.nav.navbar-nav li {
+        display: block;
+        text-align: center;
+    }
+    .mobile-menu-activated ul.nav.navbar-nav li a {
+        padding: 15px;
+        border-bottom: 1px solid #333;
+    }
+    .mobile-menu-activated .navbar-collapse { box-shadow: 0 0 0 }
+    .navbar-header {
+        position: absolute;
+        top: -70px;
+        right: 0px;
+    }
+    .social-link { top: -13px }
+    .section-padding { padding: 56px 0 }
+    .mobile-menu-activated .is-sticky .mainmenu ul.nav.navbar-nav li a { padding: 15px }
+    .is-sticky .logo img { height: 85px }
+    .is-sticky .navbar-header { top: -66px }
+    .is-sticky .social-link { top: -20px }
+    .header-text h2 { font-size: 35px }
+    .testimonial-list { font-size: 15px }
+    .contact-img img {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .footer-widget { margin-bottom: 50px }
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    
+}

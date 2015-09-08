@@ -1,0 +1,349 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 16px;
+}
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+.mainmenu .navbar-nav li a:focus { background: none }
+.logo img { height: 92px }
+.header-area { width: 100% }
+.top-area { position: relative }
+.sticky-wrapper {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.header-area:after,
+.mainmenu ul.nav.navbar-nav li a,
+.logo img,
+.social-link { -webkit-transition: .5s; transition: .5s }
+.is-sticky .header-area:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    content: "";
+    z-index: -1;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a { padding: 22px 15px }
+.is-sticky .logo img {
+    height: 60px;
+    padding: 10px 0;
+    width: auto;
+}
+.is-sticky .social-link { top: 21px }
+.slide-bg-1 { background: url(images/header-bg.jpg) }
+.slide-bg-2 { background: url(images/testimonial-bg.jpg) }
+.top-area-bg {
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slide-control {
+    color: #fff;
+    font-size: 81px;
+    left: 30px;
+    margin-top: -70px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    position: absolute;
+    top: 50%;
+}
+.right.slide-control {
+    left: auto;
+    right: 30px;
+}
+.slide-control:hover {
+    color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+#top-slide-carousel.carousel-fade .carousel-inner .item,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right { opacity: 0; filter: alpha(opacity=0) }
+#top-slide-carousel.carousel-fade .carousel-inner .active,
+#top-slide-carousel.carousel-fade .carousel-inner .next.left,
+#top-slide-carousel.carousel-fade .carousel-inner .prev.right { opacity: 1; filter: alpha(opacity=100) }
+#top-slide-carousel.carousel-fade .carousel-inner .next,
+#top-slide-carousel.carousel-fade .carousel-inner .prev,
+#top-slide-carousel.carousel-fade .carousel-inner .active.left,
+#top-slide-carousel.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+#top-slide-carousel.carousel-fade .carousel-control { z-index: 2 }
+.header-text { padding: 100px 0 }
+.header-text h2 {
+    background: url(images/simple.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+}
+.mainmenu ul.nav.navbar-nav {
+    float: none;
+    font-size: 20px;
+    text-align: right;
+}
+.mainmenu ul.nav.navbar-nav li {
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.mainmenu ul.nav.navbar-nav li a {
+    color: #fff;
+    padding: 40px 15px;
+}
+.mainmenu ul.nav.navbar-nav li:hover a { background: none }
+.mainmenu ul.nav.navbar-nav li.active:before {
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    content: "";
+    background: #c8c5ba;
+}
+.btn-field {
+    color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.btn-field:after {
+    background: #1d2122 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.btn-field.yellow-color-btn:after { background: #D2BA82 }
+.mainmenu {
+    position: relative;
+    padding-right: 90px;
+}
+.social-link {
+    position: absolute;
+    right: 0;
+    top: 38px;
+}
+.social-link a {
+    color: #dab33e;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.header-text-area {
+    position: relative;
+    padding-top: 80px;
+}
+.about-area { background: url(images/patterns.png) }
+.section-title {
+    background: url(images/about-sign.png) no-repeat scroll center bottom;
+    color: #cc9900;
+    font-size: 36px;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text { margin-top: 20px }
+.about-text p { font-size: 16px }
+.section-padding { padding: 80px 0 }
+.author-photo { margin-top: 50px }
+.ingradients-area { position: relative }
+.ingradients-bg { background-image: url(images/parallax-bg.jpg) }
+.parralax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.ingradients-text {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+.ingradients-text p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.ingradients-text:after,
+.testimonial-list:after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.section-title.white-sec-title {
+    color: #fff;
+    background-image: url(images/sample_1.png);
+}
+.food-menu-area { background: url(images/patterns.png) }
+.single-food-menu-item h2 {
+    border-bottom: 1px solid;
+    color: #c89f2d;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.single-food-menu-item span {
+    float: right;
+    font-weight: normal;
+}
+.single-food-menu-item { margin-bottom: 40px }
+.single-food-menu-item p {
+    font-size: 15px;
+    margin: 0;
+}
+.single-food-menu-item.spacial {
+    border: 1px solid #e2d09f;
+    padding: 10px;
+    position: relative;
+}
+.single-food-menu-item.spacial:before {
+    background: #c89f2d none repeat scroll 0 0;
+    color: #fff;
+    content: "spacial";
+    padding: 1px 10px;
+    position: absolute;
+    right: -1px;
+    text-transform: uppercase;
+    top: -19px;
+    font-size: 12px;
+}
+.testimonial-area { position: relative }
+.testimonial-bg { background: url(images/new-testimonial-bg1.jpg) }
+.testimonial-list {
+    color: #fff;
+    font-size: 25px;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-list p.testimonial-author {
+    font-size: 18px;
+    margin-top: 30px;
+}
+#testimonial-carousel:before {
+    content: "\f10d";
+    font-family: fontAwesome;
+    left: -30px;
+    top: -17px;
+    color: #9a9b9a;
+    position: absolute;
+    font-size: 36px;
+}
+.contact-us-area { background: url(images/patterns.png) }
+.contact-img img {
+    margin-left: 30px;
+    width: 245px;
+}
+.contact-form {
+    text-align: left;
+    margin-top: 30px;
+}
+.contact-form label { color: #cc9900 }
+.contact-form input[type="text"],
+.contact-form select {
+    border: 1px solid #cc9900;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.contact-form button {
+    background: #cc9900 none repeat scroll 0 0;
+    border: medium none;
+    padding: 8px 30px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+}
+.footer-area {
+    background: #1f1f1f none repeat scroll 0 0;
+    padding: 50px 0;
+    font-size: 15px;
+    color: #F0F0F0;
+}
+.footer-area strong { color: #fff }
+.footer-area .section-title {
+    color: #fff;
+    font-size: 20px;
+    background-image: url(images/sample_small.png);
+}
+.footer-card { margin-top: 18px }
+.footer-card i { padding: 0 2px }
+.footer-social-icon a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0 5px;
+}
+.footer-social-icon { margin-top: 15px }
